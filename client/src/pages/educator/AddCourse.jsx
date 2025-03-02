@@ -15,7 +15,6 @@ const AddCourse = () => {
   const [chapters, setChapters] = useState([]);
   const [showPopup, setShowPopup] = useState(false);
   const [currentChapterId, setCurrentChapterId] = useState(null);
-  const [submittedCourses, setSubmittedCourses] = useState([]);
 
   const [lectureDetails, setLectureDetails] = useState(
     {
@@ -89,38 +88,8 @@ const AddCourse = () => {
     });
   };
 
-  const handleDeleteCourse = (id) => {
-    setSubmittedCourses(submittedCourses.filter(course => course.id !== id));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!courseTitle.trim()) {
-      alert("Please enter a course title.");
-      return;
-    }
-
-    const quillContent = quillRef.current ? quillRef.current.root.innerHTML : '';
-
-    const newCourse = {
-      id: uniqid(),
-      title: courseTitle,
-      description: quillContent,  
-      price: coursePrice,
-      discount: discount,
-      image: image ? URL.createObjectURL(image) : null,
-      chapters: [...chapters]
-    };
-
-    setSubmittedCourses([...submittedCourses, newCourse]);
-
-    setCourseTitle('');
-    if (quillRef.current) quillRef.current.root.innerHTML = '';
-    setCoursePrice(0);
-    setDiscount(0);
-    setImage(null);
-    setChapters([]);
+  const handleSubmit = async (e) => {
+    e.preventDefault()
   };
 
   useEffect(()=>{
@@ -169,7 +138,7 @@ const AddCourse = () => {
             <div key={chapterIndex} className='bg-white border rounded-lg mb-4'>
               <div className='flex justify-between items-center p-4 border-b'>
                 <div className='flex items-center'>
-                  <img onClick={() => handleChapter('toggle', chapter.chapterId)} src={assets.dropdown_icon} width={14} alt="" className={`mr-2 cursor-pointer transition-all ${chapter.collapsed ? "-rotate-90" : ""}`} />
+                  <img onClick={() => handleChapter('toggle', chapter.chapterId)} src={assets.dropdown_icon} width={14} alt="" className={`mr-2 cursor-pointer transition-all ${chapter.collapsed && "-rotate-90"}`} />
                   <span className='font-semibold'>{chapterIndex + 1} {chapter.chapterTitle}</span>
                 </div>
                 <span className='text-gray-500'>{chapter.chapterContent.length} Lectures</span>
@@ -226,29 +195,6 @@ const AddCourse = () => {
           ADD
         </button>
       </form>
-
-        <div className="w-full mt-6">
-        <h2 className="text-xl font-semibold mb-4">Added Courses</h2>
-        {submittedCourses.length === 0 ? (
-          <p className="text-gray-500">No courses added yet.</p>
-        ) : (
-          submittedCourses.map((course, index) => (
-            <div key={course.id} className="border p-4 rounded mb-4 shadow">
-              <h3 className="text-lg font-bold">{index + 1}. {course.title}</h3>
-              <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: course.description }}></p>
-              <p>Price: ${course.price}</p>
-              <p>Discount: {course.discount}%</p>
-              {course.image && <img src={course.image} alt="Course Thumbnail" className="mt-2 max-h-20 rounded" />}
-              <p className="mt-2 text-gray-600">
-                {course.chapters.length} {course.chapters.length === 1 ? 'Chapter' : 'Chapters'}
-              </p>
-              <button onClick={() => handleDeleteCourse(course.id)} className="bg-blue-500 text-white px-4 py-2 rounded ml-auto block">
-              Delete
-              </button>
-            </div>
-          ))
-        )}
-        </div>
     </div>
   )
 }
