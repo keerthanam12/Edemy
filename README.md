@@ -168,6 +168,7 @@ Edemy is a modern Learning Management System (LMS) that enables users to browse,
 ## ⚡ Need more Toturial?
   * [Tailwind CSS Official Site](https://tailwindcss.com/)
 
+
 ## 🚀 Run the Project
 **1.** Download and Extract the zip file. Make sure to install the packages "vite.js" and "node.js" and "npm" and "mongodb" and "react" and "express.js" in your environment variables.
 
