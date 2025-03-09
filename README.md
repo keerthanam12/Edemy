@@ -132,7 +132,7 @@ Edemy is a modern Learning Management System (LMS) that enables users to browse,
 ## ⚡ Need more Toturial?
   * [React Official Site](https://react.dev/)
 
-<p align="center"><a href="https://vite.dev/" target="_blank"><img src="https://github.com/user-attachments/assets/3ee2b80c-0c3f-4987-b1c6-a3e96a0a7d2c" width="200" alt="Vite.js Logo"></a></p>
+<p align="center"><a href="https://vite.dev/" target="_blank"><img src="https://github.com/user-attachments/assets/3ee2b80c-0c3f-4987-b1c6-a3e96a0a7d2c" width="300" alt="Vite.js Logo"></a></p>
 
 <p align="center">
 <a href="https://packagist.org/packages/pentatrion/vite-bundle"><img src="https://img.shields.io/packagist/dt/pentatrion/vite-bundle" alt="Total Downloads"></a>
@@ -150,7 +150,7 @@ Edemy is a modern Learning Management System (LMS) that enables users to browse,
 ## ⚡ Need more Toturial?
   * [Vite.js Official Site](https://vite.dev/)
 
-<p align="center"><a href="https://tailwindcss.com/" target="_blank"><img src="https://github.com/user-attachments/assets/284f2ec0-029c-4c37-a9ca-6aa98b660371" width="200" alt="Tailwind CSS Logo"></a></p>
+<p align="center"><a href="https://tailwindcss.com/" target="_blank"><img src="https://github.com/user-attachments/assets/284f2ec0-029c-4c37-a9ca-6aa98b660371" width="300" alt="Tailwind CSS Logo"></a></p>
 
 <p align="center">
 <a href="https://packagist.org/packages/usernotnull/tall-toasts"><img src="https://img.shields.io/packagist/dt/usernotnull/tall-toasts" alt="Total Downloads"></a>
