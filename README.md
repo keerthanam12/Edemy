@@ -95,7 +95,7 @@ Edemy is a modern Learning Management System (LMS) that enables users to browse,
   * Complete the installation until finish.
 
 ## ⚡ Need more Toturial?
-  * [Node.js Official Site](https://expressjs.com/)
+  * [Express.js Official Site](https://expressjs.com/)
 
 <p align="center"><a href="https://www.mongodb.com/" target="_blank"><img src="https://github.com/keerthanam12/Link-Shortener/assets/145577874/776b0b68-91dc-455a-905e-87de54e47d49" width="200" alt="MongoDB Logo"></a></p>
 
