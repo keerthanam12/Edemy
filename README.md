@@ -3,7 +3,7 @@ Edemy - Learning Management System
 
 
 # 🔗 Project Description
-Edemy is a modern Learning Management System (LMS) that enables users to browse, purchase, and watch courses online. The platform provides an intuitive and user-friendly experience, allowing learners to explore a wide range of educational content across various subjects. Whether you're looking to improve your coding skills, master digital marketing, or learn a new language, Edemy offers a seamless learning journey with integrated video lectures and a secure payment system.
+Edemy is a modern Learning Management System (LMS) that enables users to browse, purchase, and watch courses online. The platform provides an intuitive and user-friendly experience, allowing learners to explore a wide range of educational content across various subjects. Whether you're looking to improve your coding skills, master digital marketing, or learn a new language, Edemy offers a seamless learning journey with integrated video lectures and a secure payment system. This is an LMS website where educators can publish courses online, and students can enroll and watch courses.
 
 
 ## 🖥️ Tech Stack
