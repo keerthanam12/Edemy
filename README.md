@@ -150,7 +150,7 @@ Edemy is a modern Learning Management System (LMS) that enables users to browse,
 ## ⚡ Need more Toturial?
   * [Vite.js Official Site](https://vite.dev/)
 
-<p align="center"><a href="https://tailwindcss.com/" target="_blank"><img src="" width="200" alt="Tailwind CSS Logo"></a></p>
+<p align="center"><a href="https://tailwindcss.com/" target="_blank"><img src="https://github.com/user-attachments/assets/67a90752-cf2d-4d68-807c-b4423c6695e5" width="200" alt="Tailwind CSS Logo"></a></p>
 
 <p align="center">
 <a href="https://packagist.org/packages/usernotnull/tall-toasts"><img src="https://img.shields.io/packagist/dt/usernotnull/tall-toasts" alt="Total Downloads"></a>
